@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Calender</title>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="evo-calendar.min.css">
+        <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero">
+            <div id="calendar"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="evo-calendar.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                theme:"Midnight Blue",
+                calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2020", // Event date (required)
+        description:"The heart is touching greetings will make feel anyone very special.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["January/13/2020", "January/16/2020"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867", // Event custom color (optional)
+        everyYear:true //same event every year(optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "Republic Day", // Event name (required)
+        date: "January/26/2020", // Event date (required)
+        description:"To commemorate the adoption of the constitution of India",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "Valentine's Day", // Event name (required)
+        date: "February/14/2020", // Event date (required)
+        description:"It is an annual festival to celebrate romantic love,friendship and administration",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "Women's Day", // Event name (required)
+        date: "March/8/2020", // Event date (required)
+        description:"A day when women's are recognized for their achievements",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "Ambedhkar Jayanthi", // Event name (required)
+        date: "April/14/2020", // Event date (required)
+        description:"To pay tribute to Dr.Ambedhkar's contribution to the Indian soceity and to remember his teachings and idealss",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "May Day", // Event name (required)
+        date: "May/1/2020", // Event date (required)
+        description:"It is the day that commerates the struggles and gain made by workers and labour movement",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event1', // Event's ID (required)
+        name: "Independence Day", // Event name (required)
+        date: "August/15/2020", // Event date (required)
+        description:"When our country gained freedom from british colonial rule",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Teacher's Day", // Event name (required)
+        date: "September/5/2020", // Event date (required)
+        description:"It is celebrated as birthday of second president Dr.Sarvepalli Radhakrishnan",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Gandhi Jayanthi", // Event name (required)
+        date: "October/2/2020", // Event date (required)
+        description:"He is one of the best freedom fighter",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Children's Day", // Event name (required)
+        date: "November/14/2020", // Event date (required)
+        description:"It is celebrated across India to raise awareness about the rights,education,and welfare of children",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Christmas", // Event name (required)
+        date: "December/25/2020", // Event date (required)
+        description:"It is an annual festival commemorating the birth of Jesus Christ",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+  ]
+
+            })
+         })
+        </script>
+    </body>
+</html>
